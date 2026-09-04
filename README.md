@@ -170,3 +170,22 @@
 
 </body>
 </html>
+
+    <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alternador de Tema</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>Altere o Tema da Página</h1>
+        <button id="botao-tema" onclick="mudaTema()">Alternar Tema</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
