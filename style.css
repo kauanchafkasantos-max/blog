@@ -1,0 +1,146 @@
+/* --- CONFIGURAÇÕES PADRÃO (MODO ESCURO) --- */
+body {
+  background-color: #11141a;
+  color: #ece8e1;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+  background-color: #1f2326;
+  color: #ff4655;
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 8px 8px 0 0;
+  border-bottom: 2px solid #ff4655;
+  transition: background-color 0.3s ease;
+}
+
+main {
+  background-color: #1f2326;
+  color: #ece8e1;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 0 0 8px 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+img {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  border: 1px solid #ff4655;
+}
+
+p {
+  color: #ece8e1;
+  line-height: 1.6;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+h2, h3 {
+  color: #ff4655;
+}
+
+/* --- BOTÃO ALTERNADOR DE TEMA --- */
+.theme-container {
+  max-width: 800px;
+  margin: 0 auto 15px auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#theme-toggle {
+  background-color: #1f2326;
+  color: #ece8e1;
+  border: 1px solid #ff4655;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+#theme-toggle:hover {
+  background-color: #ff4655;
+  color: #fff;
+}
+
+/* --- ESTILOS DO BOTÃO DE CURTIR --- */
+.like-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #333;
+}
+
+#like-btn {
+  background-color: #11141a;
+  color: #fff;
+  border: 2px solid #ff4655;
+  border-radius: 20px;
+  padding: 8px 18px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+#like-btn:hover, #like-btn.curtido {
+  background-color: #ff4655;
+  color: #fff;
+}
+
+.like-text {
+  color: #ff4655;
+  font-weight: bold;
+}
+
+
+/* --- REGRAS DO MODO CLARO --- */
+body.light-mode {
+  background-color: #f0f2f5;
+  color: #11141a;
+}
+
+body.light-mode header {
+  background-color: #ffffff;
+}
+
+body.light-mode main {
+  background-color: #ffffff;
+  color: #11141a;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+body.light-mode p {
+  color: #333333;
+}
+
+body.light-mode #theme-toggle {
+  background-color: #ffffff;
+  color: #11141a;
+  border-color: #ccc;
+}
+
+body.light-mode #like-btn {
+  background-color: #ffffff;
+  color: #11141a;
+}
+
+body.light-mode #like-btn.curtido {
+  background-color: #ff4655;
+  color: #fff;
+}
