@@ -16,7 +16,8 @@
 
   <header>
     <h1>Valorant: O FPS do Futuro</h1>
-    <img src="https://placeholder.com" alt="Logo Valorant">
+    <!-- Logo Oficial do Valorant Adicionada -->
+    <img src="https://wikimedia.org" alt="Logo Valorant" class="valorant-logo">
   </header>
 
   <main>
@@ -85,7 +86,6 @@
     /* --- SCRIPT DO MODO CLARO / ESCURO --- */
     const botaoTema = document.getElementById("theme-toggle");
 
-    // Aplica o tema salvo ao carregar a página
     if (localStorage.getItem("tema") === "light") {
       document.body.classList.add("light-mode");
       botaoTema.innerText = "🌙 Modo Escuro";

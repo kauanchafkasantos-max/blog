@@ -31,11 +31,14 @@ main {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-img {
-  width: 80px;
-  height: 80px;
-  border-radius: 8px;
-  border: 1px solid #ff4655;
+/* Ajustes da Logomarca */
+.valorant-logo {
+  width: auto;
+  height: 60px; /* Altura ideal mantendo a proporção */
+  border-radius: 0;
+  border: none;
+  margin-top: 10px;
+  transition: filter 0.3s ease;
 }
 
 p {
@@ -109,7 +112,7 @@ h2, h3 {
 }
 
 
-/* --- REGRAS DO MODO CLARO --- */
+/* --- REGRAS DO MOTO CLARO --- */
 body.light-mode {
   background-color: #f0f2f5;
   color: #11141a;
@@ -117,6 +120,11 @@ body.light-mode {
 
 body.light-mode header {
   background-color: #ffffff;
+}
+
+/* Aplica um filtro leve à logo se necessário no modo claro */
+body.light-mode .valorant-logo {
+  filter: brightness(0.9); 
 }
 
 body.light-mode main {
